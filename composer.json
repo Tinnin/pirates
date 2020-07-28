@@ -1,0 +1,33 @@
+{
+    "name": "mkob/pirates",
+    "description": "Play a game of pirates.",
+    "authors": [
+        {
+            "name": "Michael Kobyashev",
+            "email": "ssjtix@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra" : {
+        "laravel": {
+            "providers": [
+                "mkob\\pirates\\PiratesServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "MKob\\Pirates\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "MKob\\Pirates\\Tests\\" : "tests/",
+            "MKob\\Pirates\\Tests\\Unit\\" : "tests/Unit/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0@dev"
+    }
+}
